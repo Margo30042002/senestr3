@@ -94,14 +94,15 @@ document.getElementById("tt1").value="Привет,Мир";
 <p id="p1"> Создать группу радиокнопок, с помощью которой можно выбрать цвет текста документа (создайте четыре варианта цветов). 
 Создайте обработку события формы onsubmit появлением строки «ПРИВЕТ,МИР» в одностроковом поле ввода информации данной формы.
 </p>
-<form action="" method="get">
- 
+<form action="" method="get" onsubmit="g5();return false;">
+ <p1> Цвет текста</p1>
 <input type="radio" name="rd1" id="rr1" value="rr1" onchange="g1()">Красный<br>
 <input type="radio" name="rd1" id="rr2" value="rr2" onchange="g2()"> Зеленый<br>
 <input type="radio" name="rd1" id="rr3" value="rr3" onchange="g3()">Голубой<br>
 <input type="radio" name="rd1" id="rr4" value="rr4" onchange="g4()">Фиолетовый<br>
-<input type="text" name="tx1" id="tt1" value="значення за замовченням"><br>
-<input type="submit" name="sb1" id="ss1" value="відправити" onsubmit="g5()"><br>
+<table border="1">
+ <tr><td><input type="text" name="tx1" id="tt1" value="значення за замовченням"><br></td><td><input type="submit" name="sb1" id="ss1" value="відправити" ><br></td></tr>
+
 
 </form>
 </div>
